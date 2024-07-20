@@ -1,0 +1,143 @@
+{
+  "_id": "27b2ccd7-5d81-6231-cc78-ef1b1b5a11d2",
+  "_updated_at": "2024-07-19",
+  "title": "john Snow - Resume",
+  "active": true,
+  "moto": "If there is a problem, there is a solution.",
+  "location": {
+    "city": "Des Moines",
+    "state": "Iowa"
+  },
+  "identification": {
+    "_id": "9e08f9b2-3e6e-ff41-1baf-24d76a050317",
+    "first_name": "John",
+    "last_name": "Snow"
+  },
+  "communication": {
+    "email": "dev.johnsnow@proton.me",
+    "social": "https://www.linkedin.com/in/john-snow-0a8319101/"
+  },
+  "expertise": {
+    "programming languages": [
+      "Python",
+      "Microframeworks (Flask, FastAPI)",
+      "JS",
+      "jQuery",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Bootstrap"
+    ],
+    "Tooling": [
+      "Docker",
+      "ElasticSearch/OpenSearch",
+      "Git",
+      "Jenkins",
+      "Concourse",
+      "Control-M",
+      "AWS services (EC2, S3, SNS SQS, CloudWatch)",
+      "Linux"
+    ],
+    "Databases": [
+      "PostgreSQL (PgAdmin)",
+      "MySQL (SQL Server - SSMS)",
+      "MongoDB"
+    ]
+  },
+  "work": {
+    "Cardinal Health, FUSE": {
+      "_id": "d4cc925d-8067-9471-e083-cd4191642417",
+      "position": "Staff Software Engineer",
+      "duration": "May 2020 -> Present",
+      "highlights": "Initially a consulting role, then hired as full-time employee to optimize, re-write and maintain python based, internal facing code-bases",
+      "details": [
+        "Modernizing legacy codebase, written with stored procs. and old python code to have a user-friendly front-end and optimized back-end with Python (Flask/FastAPI), React, PostgreSQL, PCF, AWS and Concourse CI pipeline so that it can scale while keeping it HIPAA compliant",
+        "Re-writing some of the legacy ADHOC systems according to business needs with said technologies as well as converting most of the Flask Framework to FastAPI Framework",
+        "Monitoring legacy and current systems' performance and availability with Kibana and Tableau",
+        "DevOps Liaison of my team to elevate our infrastructure problems as well as getting more exposure to DevOps environments to further increase my knowledge"
+      ]
+    },
+    "Athene Holding USA": {
+      "_id": "e5840f5b-ff9d-b3c1-3d79-7d45d90b3168",
+      "position": "Software Developer II",
+      "duration": "November 2017 -> May 2020",
+      "highlights": "Responsible for ETL operations via Python for all Actuarial IT needs to satisfy business requirements",
+      "details": [
+        "Mainly involved with the implementation of the new Policy Administration's ETL processes such as data loading for our team, creating AIL's and the AVRF processes",
+        "Maintaining and developing the AVRF (Account Value Roll Forward) software for annuities",
+        "Re-writing the current ETL functionality with Python and maintaining it",
+        "Implementing the industry standards for code quality and functionality",
+        "Working with the 'Risk' and 'Actuarial' teams to further develop according to their needs"
+      ]
+    },
+    "Principal Financial Group": {
+      "_id": "c99ef3d2-8c41-461d-9a14-e862cc9c10e6",
+      "position": "Network Automation Engineer",
+      "duration": "August 2017 -> December 2017",
+      "highlights": "With this consulting role, I work with the network team and automate our daily processes as well as uplifting the software development process to the industry standards in various ways with Python and CI Tool",
+      "details": [
+        "Technical advising for automation with Python and setting up automation mindset as well as introducing GIT to the Network team",
+        "Significant contributor to Principal Financial Group's Network team's automation process with Python Scripting, implementing CI, and creating the entire Test environment infrastructure",
+        "Software Development and Scripting with Python while uplifting the existing Python code to the industry standards",
+        "Creating and managing a small DevOps team and establishing the automation infrastructure and mindset"
+      ]
+    },
+    "Meredith Corporation": {
+      "_id": "dd26bd57-9162-ff49-a8e3-c3c4f0e33cd3",
+      "position": "Script Engineer",
+      "duration": "January 2015 -> August 2017",
+      "highlights": "Lead technical Scripter for virtually all Meredith Corporate sites including multiple top 200 platforms. Used Python to developed corporate wide scripting methodologies, implemented multiple process improvements which lead to significantly fewer production errors.",
+      "details": [
+        "Significant contributor to Meredith's Google AMP Structured Page data verification via Python for Better Homes and Gardens online",
+        "Prevented Meredith Corporation from spending $150,000 annually for unnecessary technology such as Yottaa via extensive testing which created with Python",
+        "Fitpregnancy.com data migration and reporting integration on a greenfield redevelopment project with Python",
+        "Extensive production testing of Shape.com, Parents.com, along with 10+ other major corporate sites with Python",
+        "Deep knowledge developing DB tools (MySQL, SQLite and MongoDB) to assist with multidisciplinary development teams including the core digital development team and multiple QA teams",
+        "Extensive knowledge of client-side, server-side SEO and Analytic platforms, problems and solutions"
+      ]
+    },
+    "Easy Automations Inc": {
+      "_id": "591f8663-4bf6-993e-c27b-d2000f734537",
+      "position": "Gui Tester, Software Tester",
+      "duration": "2014",
+      "highlights": "Extensive experience testing Java/J2EE swing elements. Extensive troubleshooting and debugging focused on functional agile software improvement. Experience with QF-Test, scripting and automated test software.",
+      "details": [
+        "Extensive testing the new “receiving module” before and after its release",
+        "Significant contributor for testing the GUI elements of the main product and all the other secondary products"
+      ]
+    }
+  },
+  "education": {
+    "e4c6835d-d319-99fd-976b-d6cea9d264cc": {
+      "school": "Selcuk University - Konya, TURKEY",
+      "degree": "Statistics - B.A",
+      "duration": "2002 -> 2007"
+    },
+    "fd5f05f9-280d-5368-3a2a-756a0a47af57": {
+      "school": "Iowa Lakes Community College",
+      "degree": "Computer Programming - A.A.S.",
+      "duration": "09/2013 - 12/2014"
+    }
+  },
+  "metadata": {
+    "United States Marine Corp": {
+      "_id": "1a1e83b5-1b1b-5ada-e76a-7263de630c0f",
+      "position": "Field Artillery Cannoneer",
+      "duration": "2008 -> 2013",
+      "highlights": "Extensive experience working with teams in high pressure situations.",
+      "details": [
+        "Responsible for multi-million-dollar hardware and a variety of classified and open computer systems",
+        "Extensive leadership experience",
+        "Project management experience, with a result driven focus under adverse circumstances and conditions",
+        "Awarded multiple commendations for exceptional performance"
+      ]
+    },
+    "extra": [
+      "I'm a well-equipped software developer, excellent problem solver, and a husband. I love to code, and learn new technologies",
+      "Love to tackle new problems, love the challenge",
+      "I'm native in Turkish and proficient in English",
+      "I love to travel and experience new sights",
+      "I'm a United Way contributor"
+    ]
+  }
+}

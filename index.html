@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Snow - Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <style></style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.js"></script>
+  </head>
+  <body>
+    <div class="flex">
+      <h1>John Snow</h1>
+      <h2>=== WIP ===</h2>
+      <div class="json-container">
+        <div id="json"></div>
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+        fetch("/data.json")
+          .then((response) => response.json())
+          .then((data) => {
+            // Initialize JSONView
+            $("#json").JSONView(data);
+            $("#json-collapsed").JSONView(data, { collapsed: true, level: 1 });
+
+            // Use methods on initialized JSONView
+            $("#json").JSONView("collapse");
+            $("#json").JSONView("expand", 1);
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+  </body>
+</html>
