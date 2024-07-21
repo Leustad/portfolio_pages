@@ -9,34 +9,55 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.css"
     />
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <style></style>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.js"></script>
   </head>
   <body>
-    <div class="flex">
-      <h1>John Snow</h1>
-      <h2>=== WIP ===</h2>
-      <div class="json-container">
-        <div id="json"></div>
+    <div class="container">
+      <div class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/tinkerings.html">Tinkerings</a>
+      </div>
+      <div class="content">
+        <h1>John Snow</h1>
+        <h2>=== WIP ===</h2>
+        <div class="home-container">
+          <p class="lead">
+            <b
+              ><u
+                >I'm an Experienced Python Developer with a Demonstrated History
+                on Web Development, Scripting, and Site Reliability
+                Engineering.</u
+              ></b
+            >
+          </p>
+          <p>
+            I play well with others, believe in team work, and on time delivery
+            as well as code quality.
+          </p>
+          <p>
+            I'm also a Husband, PC Gamer, a Formula 1 fan, a Car Enthusiast and
+            Technology Addict.
+          </p>
+          <p>
+            I love challenges. Long nights trying to figure out the best way to
+            solve the given problem is my drug.
+          </p>
+
+          <p>
+            If you are looking for someone who is passionate about
+            <strong>Scripting, Automation, Web Development</strong> and
+            <strong>Python</strong> you found who you are looking for.
+          </p>
+
+          <p>
+            If you want to learn more about me? Please click
+            <a class="btn btn-primary btn-large" href="/resume.html">here</a>.
+          </p>
+        </div>
       </div>
     </div>
-
-    <script>
-      $(function () {
-        fetch("/data.json")
-          .then((response) => response.json())
-          .then((data) => {
-            // Initialize JSONView
-            $("#json").JSONView(data);
-            $("#json-collapsed").JSONView(data, { collapsed: true, level: 1 });
-
-            // Use methods on initialized JSONView
-            $("#json").JSONView("collapse");
-            $("#json").JSONView("expand", 1);
-          })
-          .catch((error) => console.error("Error:", error));
-      });
-    </script>
   </body>
 </html>

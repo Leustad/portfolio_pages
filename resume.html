@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Snow - Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/tinkerings.html">Tinkerings</a>
+      </div>
+      <div class="content">
+        <h1>John Snow</h1>
+        <h2>=== WIP ===</h2>
+        <div class="json-container">
+          <div id="json"></div>
+        </div>
+        <p class="resume-download">
+          Click <a id="download-link" href="#" download="data.json">here</a> to
+          download this in <i>".json"</i> format.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+        fetch("/data.json")
+          .then((response) => response.json())
+          .then((data) => {
+            // Initialize JSONView
+            $("#json").JSONView(data);
+            $("#json-collapsed").JSONView(data, { collapsed: true, level: 1 });
+
+            // Use methods on initialized JSONView
+            $("#json").JSONView("collapse");
+            $("#json").JSONView("expand", 1);
+
+            // Convert JSON object to string and encode it in a data URI
+            const dataStr =
+              "data:text/json;charset=utf-8," +
+              encodeURIComponent(JSON.stringify(data));
+
+            // Set the href attribute to the data URI
+            document
+              .getElementById("download-link")
+              .setAttribute("href", dataStr);
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+  </body>
+</html>

@@ -2,10 +2,15 @@
   font-family: monospace;
   white-space: pre-wrap;
   background-color: #2d2d2d;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 body {
   background-color: #2d2d2d;
+  font-family: monospace;
+  color: antiquewhite;
 }
+
 /* Custom styles for JSONView */
 .jsonview {
   font-family: monospace;
@@ -20,7 +25,8 @@ span.prop {
 span.string {
   color: rgb(22, 233, 57) !important;
 }
-li a {
+li a,
+a {
   color: rgb(24, 183, 211);
 }
 .collapser {
@@ -45,4 +51,48 @@ h2 {
 .flex {
   margin-left: 50px;
   max-width: 1500px;
+}
+.container {
+  display: flex;
+}
+
+.nav {
+  width: 200px;
+  background-color: #2d2d2d;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.nav a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 10px 0;
+  color: antiquewhite;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Tinkering */
+.tinketings-container {
+  padding-left: 20px;
+}
+
+/* home-container */
+.home-container {
+  padding-left: 20px;
+}
+
+.resume-download {
+  padding-left: 20px;
 }

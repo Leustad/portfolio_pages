@@ -20,7 +20,7 @@
   "expertise": {
     "programming languages": [
       "Python",
-      "Microframeworks (Flask, FastAPI)",
+      "Frameworks (FastAPI, Falcon, Flask, Django)",
       "JS",
       "jQuery",
       "HTML",
@@ -30,25 +30,37 @@
     ],
     "Tooling": [
       "Docker",
+      "Kubernetes",
+      "AWS services (EC2, S3, SNS SQS, CloudWatch)",
       "ElasticSearch/OpenSearch",
+      "Linux",
       "Git",
       "Jenkins",
       "Concourse",
-      "Control-M",
-      "AWS services (EC2, S3, SNS SQS, CloudWatch)",
-      "Linux"
+      "Control-M"
     ],
     "Databases": [
-      "PostgreSQL (PgAdmin)",
-      "MySQL (SQL Server - SSMS)",
+      "PostgreSQL - (PgAdmin)",
+      "MySQL - (SQL Server - SSMS)",
       "MongoDB"
     ]
   },
   "work": {
+    "Hearst Corporation": {
+      "_id": "5c9ea996-c9c3-29d1-57f7-c5c55378b0d6",
+      "position": "Senior Software Engineer",
+      "duration": "May 2022 -> Present",
+      "highlights": "Responsible for maintaining and improving the search engine for over 200 of Hearst’s national websites using the Falcon framework with Python and Opensearch",
+      "details": [
+        "Led the migration from Elasticsearch to OpenSearch for all client-facing websites and their CMS, ensuring a seamless transition and improved performance.",
+        "Developed and automated AI-driven taxonomy for all public content, enhancing content organization and discoverability.",
+        "Enhanced the search experience across all client-facing websites, resulting in improved user satisfaction and engagement."
+      ]
+    },
     "Cardinal Health, FUSE": {
       "_id": "d4cc925d-8067-9471-e083-cd4191642417",
       "position": "Staff Software Engineer",
-      "duration": "May 2020 -> Present",
+      "duration": "May 2020 -> May 2022",
       "highlights": "Initially a consulting role, then hired as full-time employee to optimize, re-write and maintain python based, internal facing code-bases",
       "details": [
         "Modernizing legacy codebase, written with stored procs. and old python code to have a user-friendly front-end and optimized back-end with Python (Flask/FastAPI), React, PostgreSQL, PCF, AWS and Concourse CI pipeline so that it can scale while keeping it HIPAA compliant",
@@ -132,6 +144,13 @@
         "Awarded multiple commendations for exceptional performance"
       ]
     },
+    "hobbies": [
+      "Software in general",
+      "large networks and connecting things to work together",
+      "Game development",
+      "Car enthusiast",
+      "Formula 1"
+    ],
     "extra": [
       "I'm a well-equipped software developer, excellent problem solver, and a husband. I love to code, and learn new technologies",
       "Love to tackle new problems, love the challenge",
