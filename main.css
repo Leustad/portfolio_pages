@@ -41,8 +41,7 @@ a {
 .ellipsis {
   color: aliceblue;
 }
-h1,
-h2 {
+h1 {
   color: aliceblue;
   padding-left: 20px;
   text-shadow: 2px 3px green;
